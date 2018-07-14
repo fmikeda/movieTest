@@ -1,0 +1,23 @@
+<div class="row featurette">
+  <div class="col-md-5">
+    <img class="card-img-top" [src]="movie.img_url" alt="Card image cap">
+  </div>
+  <div class="col-md-7">
+    <h2 class="featurette-heading">{{movie.original_title}}</h2>
+    <br>
+    <h4 class="featurette-heading">Generos</h4>
+    <div class="row">
+      <div *ngFor="let genero of movie.generes" class="col-sm">
+        <h6>{{genero}}</h6>
+      </div>
+    </div>
+    <h4 class="featurette-heading">Sinopse</h4>
+    <p class="lead">{{movie.overview}}</p>
+
+  </div>
+  <div class="row">
+    <div class="col-md-12" style="text-align: right">
+      <a class="btn btn-primary" href="#" routerLink="/" routerLinkActive="active">Voltar</a>
+    </div>
+  </div>
+</div>
